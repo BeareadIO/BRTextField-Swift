@@ -64,7 +64,9 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios
+  s.platform     = :ios, "8.0"
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
