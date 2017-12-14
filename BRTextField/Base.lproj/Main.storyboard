@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rYZ-xI-gbm">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Z78-p8-tvq">
+            <objects>
+                <viewController id="rYZ-xI-gbm" customClass="ViewController" customModule="BRTextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.94999999999999996" contentMode="scaleToFill" id="mNE-JZ-mpC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="默认模式" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vrV-JZ-KUb" customClass="BRTextField" customModule="BRTextField" customModuleProvider="target">
+                                <rect key="frame" x="15" y="59" width="345" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZiL-4d-1zR"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="underlineColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatColor">
+                                        <color key="value" red="1" green="0.27028861030000001" blue="0.24362531500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号或邮箱" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gx0-fm-caX" customClass="BRTextField" customModule="BRTextField" customModuleProvider="target">
+                                <rect key="frame" x="15" y="119" width="165" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Pxe-bd-fU2"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="underlineColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AJU-JE-CAd" customClass="BRTextField" customModule="BRTextField" customModuleProvider="target">
+                                <rect key="frame" x="195" y="119" width="165" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="vY8-ov-wuw"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="underlineColor">
+                                        <color key="value" red="1" green="0.27028861030000001" blue="0.24362531500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wBb-Cb-t9b" customClass="BRTextField" customModule="BRTextField" customModuleProvider="target">
+                                <rect key="frame" x="15" y="239" width="345" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4MP-wX-Uff"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="underlineColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="supplyColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="获取验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HFm-Yw-xaF" customClass="BRTextField" customModule="BRTextField" customModuleProvider="target">
+                                <rect key="frame" x="15" y="179" width="345" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="93z-Si-da7"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="underlineColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vrV-JZ-KUb" firstAttribute="top" secondItem="a0L-Dk-0gD" secondAttribute="top" constant="15" id="3L5-c4-qGc"/>
+                            <constraint firstItem="a0L-Dk-0gD" firstAttribute="trailing" secondItem="AJU-JE-CAd" secondAttribute="trailing" constant="15" id="41s-3j-s9q"/>
+                            <constraint firstItem="a0L-Dk-0gD" firstAttribute="trailing" secondItem="wBb-Cb-t9b" secondAttribute="trailing" constant="15" id="HKx-El-AAH"/>
+                            <constraint firstItem="vrV-JZ-KUb" firstAttribute="leading" secondItem="a0L-Dk-0gD" secondAttribute="leading" constant="15" id="JbO-v5-FSf"/>
+                            <constraint firstItem="wBb-Cb-t9b" firstAttribute="leading" secondItem="a0L-Dk-0gD" secondAttribute="leading" constant="15" id="MR8-eB-Xii"/>
+                            <constraint firstItem="Gx0-fm-caX" firstAttribute="top" secondItem="vrV-JZ-KUb" secondAttribute="bottom" constant="30" id="Rp7-Ux-vLH"/>
+                            <constraint firstItem="a0L-Dk-0gD" firstAttribute="trailing" secondItem="HFm-Yw-xaF" secondAttribute="trailing" constant="15" id="bRd-1c-aHf"/>
+                            <constraint firstItem="Gx0-fm-caX" firstAttribute="leading" secondItem="a0L-Dk-0gD" secondAttribute="leading" constant="15" id="fn5-SY-FXl"/>
+                            <constraint firstItem="a0L-Dk-0gD" firstAttribute="trailing" secondItem="vrV-JZ-KUb" secondAttribute="trailing" constant="15" id="ka5-0h-739"/>
+                            <constraint firstItem="HFm-Yw-xaF" firstAttribute="leading" secondItem="a0L-Dk-0gD" secondAttribute="leading" constant="15" id="n5K-xG-obM"/>
+                            <constraint firstItem="AJU-JE-CAd" firstAttribute="width" secondItem="Gx0-fm-caX" secondAttribute="width" id="nhN-dE-dH7"/>
+                            <constraint firstItem="HFm-Yw-xaF" firstAttribute="top" secondItem="Gx0-fm-caX" secondAttribute="bottom" constant="30" id="pIK-Ig-VcE"/>
+                            <constraint firstItem="AJU-JE-CAd" firstAttribute="top" secondItem="vrV-JZ-KUb" secondAttribute="bottom" constant="30" id="qE6-n0-YkF"/>
+                            <constraint firstItem="wBb-Cb-t9b" firstAttribute="top" secondItem="HFm-Yw-xaF" secondAttribute="bottom" constant="30" id="u6A-Q4-R3N"/>
+                            <constraint firstItem="AJU-JE-CAd" firstAttribute="leading" secondItem="Gx0-fm-caX" secondAttribute="trailing" constant="15" id="yfK-q9-0Gx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a0L-Dk-0gD"/>
+                    </view>
+                    <connections>
+                        <outlet property="tfClose" destination="Gx0-fm-caX" id="MqQ-YA-LXi"/>
+                        <outlet property="tfInternational" destination="wBb-Cb-t9b" id="H6A-pl-IGY"/>
+                        <outlet property="tfNormal" destination="vrV-JZ-KUb" id="Fpu-zh-5un"/>
+                        <outlet property="tfPassword" destination="AJU-JE-CAd" id="LVK-4L-2t7"/>
+                        <outlet property="tfVerify" destination="HFm-Yw-xaF" id="kTy-Fa-aIp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mL5-Us-3KW" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="-186"/>
+        </scene>
+    </scenes>
+</document>
