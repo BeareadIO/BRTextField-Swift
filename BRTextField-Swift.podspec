@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BRTextField-Swift"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "BRTextField is bearead custom textfield."
   s.description  = <<-DESC
                     Bearead Input TextField, display a underline & a float label.
