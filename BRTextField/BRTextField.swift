@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum BRTextFieldStyle {
+public enum BRTextFieldStyle {
     case normal
     case close
     case password
@@ -26,15 +26,15 @@ enum BRTextFieldStyle {
     }
 }
 
-@objc protocol BRTextFieldDelegate {
+@objc public protocol BRTextFieldDelegate {
     @objc optional func textFieldDidClickSupplyView(_ textField: BRTextField)
 }
 
 @IBDesignable
 public class BRTextField: UITextField {
 
-    var brDelegate: BRTextFieldDelegate?
-    var style: BRTextFieldStyle = .normal {
+    public var brDelegate: BRTextFieldDelegate?
+    public var style: BRTextFieldStyle = .normal {
         didSet {
             self.updateStyle()
         }
@@ -84,7 +84,7 @@ public class BRTextField: UITextField {
             self.lblFloat.textColor = floatColor
         }
     }
-    var floatFont: UIFont? = UIFont.systemFont(ofSize: 15) {
+    public var floatFont: UIFont? = UIFont.systemFont(ofSize: 15) {
         didSet {
             self.lblFloat.font = floatFont
         }
