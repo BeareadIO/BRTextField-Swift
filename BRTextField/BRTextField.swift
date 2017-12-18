@@ -31,7 +31,7 @@ enum BRTextFieldStyle {
 }
 
 @IBDesignable
-class BRTextField: UITextField {
+public class BRTextField: UITextField {
 
     var brDelegate: BRTextFieldDelegate?
     var style: BRTextFieldStyle = .normal {
@@ -39,23 +39,23 @@ class BRTextField: UITextField {
             self.updateStyle()
         }
     }
-    @IBInspectable var isNeedUnderLine: Bool = true {
+    @IBInspectable public var isNeedUnderLine: Bool = true {
         didSet {
             self.underlineView.isHidden = !self.isNeedUnderLine
         }
     }
-    @IBInspectable var isNeedAnimation: Bool = true
-    @IBInspectable var isNeedFloating: Bool = true {
+    @IBInspectable public var isNeedAnimation: Bool = true
+    @IBInspectable public var isNeedFloating: Bool = true {
         didSet {
             self.lblFloat.isHidden = !self.isNeedFloating
         }
     }
-    @IBInspectable var underlineColor: UIColor = UIColor.black {
+    @IBInspectable public var underlineColor: UIColor = UIColor.black {
         didSet {
             self.underlineView.backgroundColor = self.underlineColor
         }
     }
-    override var placeholder: String? {
+    override public var placeholder: String? {
         didSet {
             if self.floatText == nil {
                 self.floatText = placeholder
@@ -63,23 +63,23 @@ class BRTextField: UITextField {
             }
         }
     }
-    override var textAlignment: NSTextAlignment {
+    override public var textAlignment: NSTextAlignment {
         didSet {
             self.lblFloat.textAlignment = textAlignment
         }
     }
-    override var font: UIFont? {
+    override public var font: UIFont? {
         didSet {
             self.lblFloat.font = UIFont.systemFont(ofSize: (font?.pointSize)! - 2)
         }
     }
-    @IBInspectable var floatText: String? {
+    @IBInspectable public var floatText: String? {
         didSet {
             self.lblFloat.text = floatText
         }
     }
     
-    @IBInspectable var floatColor: UIColor = UIColor.init(red: 0, green: 0, blue: 0.1, alpha: 0.22) {
+    @IBInspectable public var floatColor: UIColor = UIColor.init(red: 0, green: 0, blue: 0.1, alpha: 0.22) {
         didSet {
             self.lblFloat.textColor = floatColor
         }
@@ -89,17 +89,17 @@ class BRTextField: UITextField {
             self.lblFloat.font = floatFont
         }
     }
-    @IBInspectable var supplyColor: UIColor? {
+    @IBInspectable public var supplyColor: UIColor? {
         didSet {
             self.lblSupply.textColor = supplyColor
         }
     }
-    @IBInspectable var supplyText: String? {
+    @IBInspectable public var supplyText: String? {
         didSet {
             self.lblSupply.text = supplyText
         }
     }
-    @IBInspectable var isSupplyEnabled: Bool = true {
+    @IBInspectable public var isSupplyEnabled: Bool = true {
         didSet {
             self.tapSupply.isEnabled = isSupplyEnabled
         }
@@ -171,17 +171,17 @@ class BRTextField: UITextField {
         propertyInit()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.propertyInit()
     }
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         self.updateUI()
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         self.updateFrame()
     }
@@ -208,7 +208,7 @@ class BRTextField: UITextField {
         self.addObserverOrAction()
     }
     
-    override func prepareForInterfaceBuilder() {
+    override public func prepareForInterfaceBuilder() {
         self.lblFloat.frame = self.floatLabelRect(rect: self.textRect(forBounds: self.bounds), editing: false)
         self.underlineView.frame = CGRect(x: 0, y: self.bounds.size.height - 0.5, width: self.bounds.size.width, height: 0.5)
     }
