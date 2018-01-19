@@ -33,7 +33,7 @@ public enum BRTextFieldStyle {
 @IBDesignable
 public class BRTextField: UITextField {
 
-    public var brDelegate: BRTextFieldDelegate?
+    public weak var brDelegate: BRTextFieldDelegate?
     public var style: BRTextFieldStyle = .normal {
         didSet {
             self.updateStyle()
