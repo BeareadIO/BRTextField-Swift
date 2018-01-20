@@ -97,6 +97,7 @@ public class BRTextField: UITextField {
     @IBInspectable public var supplyText: String? {
         didSet {
             self.lblSupply.text = supplyText
+            updateSupplyView()
         }
     }
     @IBInspectable public var isSupplyEnabled: Bool = true {
